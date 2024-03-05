@@ -41,6 +41,11 @@ const Auth = () => {
   };
   return (
     <div>
+      {auth?.currentUser?.email != null ? (
+        <h1>Logged In</h1>
+      ) : (
+        <h1>Not logged in</h1>
+      )}
       <form>
         <div>
           <label htmlFor="email">Email</label>
